@@ -1,0 +1,379 @@
+/* Main Background and Font Colors */
+.stApp {
+    background-color: #f9f5f8;
+    background-image: linear-gradient(to bottom right, #f9f5f8, #f3eaf1);
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    color: #4a4a4a;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #9b6a9e !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    border-bottom: 2px solid #e5d1e6;
+    padding-bottom: 8px;
+}
+
+/* Sidebar */
+.css-1d391kg, .css-12oz5g7 {
+    background-color: #f5ebf4 !important;
+    border-right: 1px solid #e5d1e6;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #c293c5 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 5px rgba(155, 106, 158, 0.2);
+    transition: all 0.2s ease;
+}
+
+.stButton>button:hover {
+    background-color: #9b6a9e !important;
+    box-shadow: 0 4px 8px rgba(155, 106, 158, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Form elements */
+div[data-baseweb="select"] {
+    border-radius: 20px !important;
+    border: 1px solid #e5d1e6 !important;
+}
+
+div[data-baseweb="input"] {
+    border-radius: 20px !important;
+    border: 1px solid #e5d1e6 !important;
+}
+
+.stTextInput>div>div>input {
+    border-radius: 20px !important;
+}
+
+.stNumberInput>div>div>input {
+    border-radius: 20px !important;
+}
+
+/* Radio buttons and checkboxes */
+.stRadio > div {
+    background-color: #f9f5f8 !important;
+    padding: 10px !important;
+    border-radius: 15px !important;
+    border: 1px solid #e5d1e6 !important;
+}
+
+/* Dataframes */
+.stDataFrame {
+    border: 1px solid #e5d1e6 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 10px rgba(155, 106, 158, 0.1);
+}
+
+.stDataFrame [data-testid="stDataFrameResizable"] {
+    background-color: #ffffff !important;
+}
+
+/* Success/Info messages */
+.stSuccess {
+    background-color: #e5f5eb !important;
+    border: 1px solid #a6d9b7 !important;
+    border-radius: 10px !important;
+    color: #2c7d4b !important;
+}
+
+.stInfo {
+    background-color: #e9e5f9 !important;
+    border: 1px solid #c5bbea !important;
+    border-radius: 10px !important;
+    color: #5f4b8b !important;
+}
+
+.stWarning {
+    background-color: #fff8e6 !important;
+    border: 1px solid #ffeac2 !important;
+    border-radius: 10px !important;
+    color: #b07d1a !important;
+}
+
+.stError {
+    background-color: #fae9eb !important;
+    border: 1px solid #f5c2c7 !important;
+    border-radius: 10px !important;
+    color: #b3283d !important;
+}
+
+/* Card-style containers */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(155, 106, 158, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f0e1f2;
+}
+
+/* Section dividers */
+hr {
+    margin: 25px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(155, 106, 158, 0), rgba(155, 106, 158, 0.5), rgba(155, 106, 158, 0));
+}
+
+/* Custom coloring for financial indicators */
+.positive {
+    color: #70c1a0 !important;
+}
+
+.negative {
+    color: #e27c89 !important;
+}
+
+.neutral {
+    color: #a68bb5 !important;
+}
+
+/* Add decorative elements */
+.stApp::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 150 150' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M142.951 78.9326C144.332 105.079 126.674 93.2185 116.803 116.803C106.933 140.388 93.8523 144.332 70.2674 142.951C46.6826 141.569 45.3012 120.746 25.9686 106.933C6.63604 93.1193 -10.1172 89.1745 5.25442 65.5901C20.626 42.0058 43.4911 46.6826 63.9613 25.9686C84.4316 5.25462 79.0466 -9.42603 105.193 7.32721C131.339 24.0804 141.569 52.7862 142.951 78.9326Z' fill='%23f3eaf1' fill-opacity='0.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.stApp::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M95.301 52.6217C96.2213 70.0525 84.4496 62.1457 77.8686 77.8686C71.2877 93.5918 62.5682 96.2213 46.8451 95.301C31.1217 94.3806 30.2008 80.4975 17.3124 71.2877C4.424 62.0795 -6.7448 59.4497 3.50295 43.7267C13.7507 28.0039 28.9941 31.1217 42.6409 17.3124C56.2877 3.50308 52.6977 -6.2839 70.1289 4.8848C87.5601 16.0535 94.3806 35.1908 95.301 52.6217Z' fill='%23e5d1e6' fill-opacity='0.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Tabs style */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 15px 15px 0 0 !important;
+    padding: 10px 20px !important;
+    background-color: #f0e1f2 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #c293c5 !important;
+    color: white !important;
+}
+
+/* Navigation */
+.st-emotion-cache-1cypcdb {
+    background-color: #f5ebf4 !important;
+}
+
+/* Sliders */
+.stSlider [data-baseweb="slider"] {
+    margin-top: 10px !important;
+}
+
+.stSlider [data-baseweb="slider"] div div div div {
+    background-color: #c293c5 !important;
+}
+
+.stSlider [data-baseweb="slider"] div div div div:hover {
+    background-color: #9b6a9e !important;
+}
+
+.stMultiSelect [data-baseweb="tag"] {
+    background-color: #f0e1f2 !important;
+    border-radius: 15px !important;
+}
+
+/* Make text inputs and select boxes more elegant */
+input, select, textarea {
+    font-family: 'Poppins', sans-serif !important;
+    padding: 8px 12px !important;
+}
+
+/* Improve date picker */
+.stDateInput > div > div > input {
+    border-radius: 20px !important;
+    border-color: #e5d1e6 !important;
+}
+
+/* Custom text styling */
+.fancy-header {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700;
+    color: #9b6a9e;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emoji-big {
+    font-size: 24px;
+    margin-right: 8px;
+}
+.coin-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes coinDrop {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(calc(100vh + 50px)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.coin {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at center, #ffd700 0%, #ffcc00 50%, #e6b800 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    z-index: -1;
+}
+
+.coin::after {
+    content: "$";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(150, 100, 0, 0.6);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.coin:nth-of-type(1) {
+    left: 10%;
+    animation: coinDrop 7s linear infinite;
+    animation-delay: 0s;
+}
+
+.coin:nth-of-type(2) {
+    left: 25%;
+    animation: coinDrop 8s linear infinite;
+    animation-delay: 1s;
+}
+
+.coin:nth-of-type(3) {
+    left: 40%;
+    animation: coinDrop 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.coin:nth-of-type(4) {
+    left: 60%;
+    animation: coinDrop 9s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.coin:nth-of-type(5) {
+    left: 75%;
+    animation: coinDrop 7.5s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.coin:nth-of-type(6) {
+    left: 90%;
+    animation: coinDrop 8.5s linear infinite;
+    animation-delay: 2.5s;
+}
+
+/* Financial symbols floating in background */
+.financial-symbols {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px) rotate(5deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(0);
+        opacity: 0.3;
+    }
+}
+
+.financial-symbol {
+    position: fixed;
+    font-size: 30px;
+    color: rgba(155, 106, 158, 0.2);
+}
+
+.financial-symbol:nth-of-type(1) {
+    top: 15%;
+    left: 10%;
+    animation: float 15s ease-in-out infinite;
+}
+
+.financial-symbol:nth-of-type(2) {
+    top: 30%;
+    right: 20%;
+    animation: float 18s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.financial-symbol:nth-of-type(3) {
+    bottom: 25%;
+    left: 25%;
+    animation: float 20s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.financial-symbol:nth-of-type(4) {
+    bottom: 15%;
+    right: 15%;
+    animation: float 12s ease-in-out infinite;
+    animation-delay: 7s;
+}
+
+/* Add a font import for Poppins and Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
